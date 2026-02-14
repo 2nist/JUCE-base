@@ -1,0 +1,13 @@
+build/
+build_nmake/
+.vs/
+*.user
+*.VC.db
+*.VC.opendb
+*.sln
+*.vst3/
+*.ilk
+*.pdb
+*.obj
+*.ipch
+out/
