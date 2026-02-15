@@ -1,0 +1,21 @@
+{
+  "themeId": "base",
+  "name": "Base Theme",
+  "version": "1.0.0",
+  "author": "TwoNistLabs",
+  "description": "Starter theme template for custom UI skins.",
+  "assets": {
+    "backgroundMain": "backgrounds/main-bg.svg",
+    "backgroundPanel": "backgrounds/panel-bg.svg",
+    "logo": "branding/logo.svg",
+    "menuStrip": "menus/menu-strip.svg",
+    "knobFace": "controls/knob-face.svg",
+    "buttonUp": "controls/button-up.svg",
+    "buttonDown": "controls/button-down.svg"
+  },
+  "notes": [
+    "You can replace any SVG with PNG/JPG if your layout references the new filename.",
+    "Keep dimensions consistent while iterating to avoid accidental layout shifts."
+  ]
+}
+

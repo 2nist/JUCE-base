@@ -1,0 +1,16 @@
+#pragma once
+
+#include "PluginProcessor.h"
+
+class __CLASS_NAME__AudioProcessorEditor : public juce::AudioProcessorEditor
+{
+public:
+    explicit __CLASS_NAME__AudioProcessorEditor(__CLASS_NAME__AudioProcessor&);
+    ~__CLASS_NAME__AudioProcessorEditor() override = default;
+
+    void paint(juce::Graphics&) override;
+    void resized() override;
+
+private:
+    __CLASS_NAME__AudioProcessor& audioProcessor;
+};

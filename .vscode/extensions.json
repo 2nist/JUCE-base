@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake",
+    "ms-vscode.powershell",
+    "redhat.vscode-xml",
+    "timonwong.shellcheck",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

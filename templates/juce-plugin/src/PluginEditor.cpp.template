@@ -1,0 +1,19 @@
+#include "PluginEditor.h"
+
+__CLASS_NAME__AudioProcessorEditor::__CLASS_NAME__AudioProcessorEditor(__CLASS_NAME__AudioProcessor& p)
+    : AudioProcessorEditor(&p), audioProcessor(p)
+{
+    setSize(520, 320);
+}
+
+void __CLASS_NAME__AudioProcessorEditor::paint(juce::Graphics& g)
+{
+    g.fillAll(juce::Colours::black.withBrightness(0.15f));
+    g.setColour(juce::Colours::white);
+    g.setFont(18.0f);
+    g.drawFittedText("__PRODUCT_NAME__", getLocalBounds(), juce::Justification::centred, 1);
+}
+
+void __CLASS_NAME__AudioProcessorEditor::resized()
+{
+}

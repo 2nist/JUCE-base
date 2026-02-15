@@ -1,5 +1,7 @@
 build/
 build_nmake/
+build_unix/
+build_projucer/
 .vs/
 *.user
 *.VC.db

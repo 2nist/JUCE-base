@@ -1,0 +1,37 @@
+cmake_minimum_required(VERSION 3.22)
+project(__TARGET_NAME__ VERSION 0.1.0 LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Requires JUCE submodule at external/JUCE.
+add_subdirectory(external/JUCE)
+
+juce_add_plugin(__TARGET_NAME__
+  COMPANY_NAME "__COMPANY_NAME__"
+  BUNDLE_ID "__BUNDLE_ID__"
+  IS_SYNTH FALSE
+  NEEDS_MIDI_INPUT TRUE
+  NEEDS_MIDI_OUTPUT FALSE
+  FORMATS VST3 Standalone
+  PRODUCT_NAME "__PRODUCT_NAME__"
+)
+
+target_sources(__TARGET_NAME__
+  PRIVATE
+    src/PluginProcessor.cpp
+    src/PluginProcessor.h
+    src/PluginEditor.cpp
+    src/PluginEditor.h
+)
+
+target_link_libraries(__TARGET_NAME__
+  PRIVATE
+    juce::juce_audio_utils
+  PUBLIC
+    juce::juce_recommended_config_flags
+    juce::juce_recommended_warning_flags
+)
+
+juce_generate_juce_header(__TARGET_NAME__)
