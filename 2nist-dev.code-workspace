@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/build/**": true,
+      "**/build_nmake/**": true,
+      "**/build_unix/**": true,
+      "**/build_projucer/**": true
+    },
+    "search.exclude": {
+      "**/build/**": true,
+      "**/build_nmake/**": true,
+      "**/build_unix/**": true,
+      "**/build_projucer/**": true
+    },
+    "editor.formatOnSave": false,
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "files.associations": {
+      "*.h": "cpp",
+      "*.ipp": "cpp"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cpptools",
+      "llvm-vs-code-extensions.vscode-clangd",
+      "ms-vscode.cmake-tools",
+      "twxs.cmake",
+      "ms-vscode.powershell",
+      "redhat.vscode-xml",
+      "timonwong.shellcheck",
+      "streetsidesoftware.code-spell-checker"
+    ]
+  }
+}

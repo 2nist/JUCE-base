@@ -1,0 +1,74 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run TwoNist Designer (Debug)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build_nmake\\DesignerApp_artefacts\\Debug\\TwoNist Designer.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Debug",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Run TwoNist Designer (Unix)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_unix/DesignerApp_artefacts/TwoNist Designer",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Debug",
+      "stopAtEntry": false,
+      "MIMode": "gdb"
+    },
+    {
+      "name": "Run 2nist Standalone (Debug)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build_nmake\\2nist_artefacts\\Debug\\Standalone\\2nist MIDI Arranger.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Debug",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Run 2nist Standalone (Unix)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_unix/2nist_artefacts/2nist MIDI Arranger",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Debug",
+      "stopAtEntry": false,
+      "MIMode": "gdb"
+    },
+    {
+      "name": "Run Projucer (Debug)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build_projucer\\_deps\\juce-build\\extras\\Projucer\\Projucer_artefacts\\Debug\\Projucer.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Projucer",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Run Projucer (Unix)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_projucer/_deps/juce-build/extras/Projucer/Projucer_artefacts/Debug/Projucer",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Projucer",
+      "stopAtEntry": false,
+      "MIMode": "gdb"
+    }
+  ]
+}

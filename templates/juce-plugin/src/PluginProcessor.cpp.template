@@ -1,0 +1,95 @@
+#include "PluginProcessor.h"
+#include "PluginEditor.h"
+
+__CLASS_NAME__AudioProcessor::__CLASS_NAME__AudioProcessor()
+    : juce::AudioProcessor(BusesProperties())
+{
+}
+
+void __CLASS_NAME__AudioProcessor::prepareToPlay(double, int)
+{
+}
+
+void __CLASS_NAME__AudioProcessor::releaseResources()
+{
+}
+
+bool __CLASS_NAME__AudioProcessor::isBusesLayoutSupported(const BusesLayout&) const
+{
+    return true;
+}
+
+void __CLASS_NAME__AudioProcessor::processBlock(juce::AudioBuffer<float>&, juce::MidiBuffer&)
+{
+}
+
+juce::AudioProcessorEditor* __CLASS_NAME__AudioProcessor::createEditor()
+{
+    return new __CLASS_NAME__AudioProcessorEditor(*this);
+}
+
+bool __CLASS_NAME__AudioProcessor::hasEditor() const
+{
+    return true;
+}
+
+const juce::String __CLASS_NAME__AudioProcessor::getName() const
+{
+    return JucePlugin_Name;
+}
+
+bool __CLASS_NAME__AudioProcessor::acceptsMidi() const
+{
+    return true;
+}
+
+bool __CLASS_NAME__AudioProcessor::producesMidi() const
+{
+    return false;
+}
+
+bool __CLASS_NAME__AudioProcessor::isMidiEffect() const
+{
+    return false;
+}
+
+double __CLASS_NAME__AudioProcessor::getTailLengthSeconds() const
+{
+    return 0.0;
+}
+
+int __CLASS_NAME__AudioProcessor::getNumPrograms()
+{
+    return 1;
+}
+
+int __CLASS_NAME__AudioProcessor::getCurrentProgram()
+{
+    return 0;
+}
+
+void __CLASS_NAME__AudioProcessor::setCurrentProgram(int)
+{
+}
+
+const juce::String __CLASS_NAME__AudioProcessor::getProgramName(int)
+{
+    return {};
+}
+
+void __CLASS_NAME__AudioProcessor::changeProgramName(int, const juce::String&)
+{
+}
+
+void __CLASS_NAME__AudioProcessor::getStateInformation(juce::MemoryBlock&)
+{
+}
+
+void __CLASS_NAME__AudioProcessor::setStateInformation(const void*, int)
+{
+}
+
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
+{
+    return new __CLASS_NAME__AudioProcessor();
+}

@@ -1,0 +1,31 @@
+{
+  "cmake.configureOnOpen": false,
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.configureArgs": [
+    "-DBUILD_TESTING=ON"
+  ],
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.associations": {
+    "*.h": "cpp",
+    "*.ipp": "cpp",
+    "*.tcc": "cpp"
+  },
+  "files.exclude": {
+    "**/build/**": true,
+    "**/build_nmake/**": true,
+    "**/build_projucer/**": true
+  },
+  "search.exclude": {
+    "**/build/**": true,
+    "**/build_nmake/**": true,
+    "**/build_projucer/**": true
+  },
+  "editor.tabSize": 4,
+  "editor.rulers": [
+    100
+  ],
+  "editor.formatOnSave": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none"
+}
