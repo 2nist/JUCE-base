@@ -1,0 +1,6 @@
+[submodule "M4LProg"]
+	path = M4LProg
+	url = https://github.com/2nist/M4LProg.git
+[submodule "vendor/foleys_gui_magic"]
+	path = vendor/foleys_gui_magic
+	url = https://github.com/ffAudio/foleys_gui_magic.git
